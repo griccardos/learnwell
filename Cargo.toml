@@ -6,7 +6,7 @@ license = "MIT OR Apache-2.0"
 description = "Framework for reinforcement learning"
 repository =  "https://github.com/griccardos/learnwell/"
 readme = "README.md"
-keywords = ["reinforcement learning", "ai","qlearning","machine learning"]
+keywords = ["reinforcementlearning", "ai","qlearning","machinelearning","learning"]
 categories = ["science","algorithms"]
 
 [lib]
