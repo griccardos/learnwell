@@ -1,0 +1,28 @@
+[package]
+name = "learnwell"
+version = "0.1.0"
+edition = "2021"
+license = "MIT OR Apache-2.0"
+description = "Framework for reinforcement learning"
+repository =  "https://github.com/griccardos/learnwell/"
+readme = "README.md"
+keywords = ["reinforcement learning", "ai","qlearning","machine learning"]
+categories = ["science","algorithms"]
+
+[lib]
+name = "learnwell"
+
+[dependencies]
+fastrand = "1.8.0"
+fxhash = "0.2.1"
+show-image = "0.13.1"
+
+
+[[example]]
+name = "taxi"
+
+[[example]]
+name = "hike"
+
+[[example]]
+name = "mouse"
