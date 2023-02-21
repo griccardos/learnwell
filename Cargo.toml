@@ -1,6 +1,6 @@
 [package]
 name = "learnwell"
-version = "0.1.0"
+version = "0.2.0"
 edition = "2021"
 license = "MIT OR Apache-2.0"
 description = "Framework for reinforcement learning"
@@ -13,16 +13,15 @@ categories = ["science","algorithms"]
 name = "learnwell"
 
 [dependencies]
-fastrand = "1.8.0"
+fastrand = "1.9.0"
 fxhash = "0.2.1"
 show-image = "0.13.1"
+runnt = "0.1.0"
+strum = { version = "0.24.1", features = ["strum_macros"] }
 
+[dev-dependencies]
 
-[[example]]
-name = "taxi"
+#tch = "0.10.2" # uncomment if you want to use torch backend in examples. We leave commented so no tch requirement
 
-[[example]]
-name = "hike"
-
-[[example]]
-name = "mouse"
+[profile.release]
+debug = true

@@ -1,19 +1,17 @@
-use crate::environment::Environment;
+use crate::{environment::Environment, progress::Progress};
+
+pub mod deepqlearning;
+pub mod nnbackend;
 pub mod qlearning;
 
+///agent which deals with state
 pub trait Agent<S, A> {
-    fn train(&mut self, epoch: usize, env: &mut dyn Environment<S, A>) -> TrainResult;
+    fn step(&mut self, progress: Progress, env: &mut dyn Environment<S, A>) -> bool;
 
     fn pick_action(
         &mut self,
         actions: &[A],
         best: Option<A>, //best based on qlearning
-        step: usize,
-        epoch: usize,
+        progress: Progress,
     ) -> A;
-}
-
-pub struct TrainResult {
-    pub steps: usize,
-    pub stats: String,
 }

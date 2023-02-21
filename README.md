@@ -2,8 +2,11 @@
 Easy reinforcement learning framework, allowing you to quickly create Environments and test them.  
 Aims to be simple  
 Minimal external dependencies
+Framework to create your own implementations
 
-Currently only Q-Learning is implemented
+Implementation examples
+- Q-Learning
+- Deep Q Learning (DQN)
 
 The state of this project is in alpha.
 Use at your own risk. 
@@ -11,8 +14,14 @@ Use at your own risk.
 ## Getting started
 
 See the taxi example and walk through the comments
-You can also run the examples for `hike`, `taxi`, `mouse` with:
 `cargo run --release --example taxi`
+you can also run the following examples:
+
+- `hike` - runs with display
+- `taxi` 
+- `mouse` 
+- `mouseimage` - DQN 
+- `taxiimage`  - DQN, runs with display
 
 Imports:
 ```rust
@@ -101,5 +110,5 @@ pub struct TaxiEnvironment {
 
 ## Status
 - [X] implement Qlearning
-- [ ] implement deep qlearning
+- [X] implement deep qlearning
 - [ ] move optional functionality to features (e.g. display, fxhasher)

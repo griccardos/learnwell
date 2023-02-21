@@ -1,3 +1,5 @@
+use crate::progress::Progress;
+
 use super::ExploreStrategy;
 
 pub struct DecliningRandom {
@@ -26,10 +28,9 @@ impl<A: Clone> ExploreStrategy<A> for DecliningRandom {
         &mut self,
         actions: &[A],
         best: Option<A>, //best based on qlearning
-        epoch: usize,
-        _step: usize,
+        progress: Progress,
     ) -> A {
-        self.current = epoch;
+        self.current = progress.epoch;
         //random if exploring or no best, else choose best
         let exploration = self.exploration_rate();
         let must_explore = fastrand::f64() < exploration;

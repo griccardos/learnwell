@@ -1,5 +1,6 @@
 pub mod agent;
 pub mod environment;
+mod progress;
 pub mod runner;
 pub mod strategy;
 
