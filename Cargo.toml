@@ -1,6 +1,6 @@
 [package]
 name = "learnwell"
-version = "0.2.0"
+version = "0.2.1"
 edition = "2021"
 license = "MIT OR Apache-2.0"
 description = "Framework for reinforcement learning"
@@ -16,7 +16,7 @@ name = "learnwell"
 fastrand = "1.9.0"
 fxhash = "0.2.1"
 show-image = "0.13.1"
-runnt = "0.1.0"
+runnt = "0.6.0"
 strum = { version = "0.24.1", features = ["strum_macros"] }
 
 [dev-dependencies]

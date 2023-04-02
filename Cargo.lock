@@ -713,7 +713,7 @@ checksum = "e2abad23fbc42b3700f2f279844dc832adb2b2eb069b2df918f455c4e18cc646"
 
 [[package]]
 name = "learnwell"
-version = "0.2.0"
+version = "0.2.1"
 dependencies = [
  "fastrand",
  "fxhash",
@@ -1192,9 +1192,9 @@ checksum = "f1382d1f0a252c4bf97dc20d979a2fdd05b024acd7c2ed0f7595d7817666a157"
 
 [[package]]
 name = "runnt"
-version = "0.1.0"
+version = "0.6.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "35827a5e22719f0968e03c5466a4b06755d7163c33390de3ca9f8ede6e88c340"
+checksum = "767b2fe0ba13079aea74c61bd6ba26e83d4d9e25809d6f03e9579db702416b70"
 dependencies = [
  "fastrand",
  "ndarray",

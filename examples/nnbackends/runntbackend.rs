@@ -30,8 +30,8 @@ impl NNBackend for RunntBackend {
             self.nn.fit_one(inp, &out);
         }*/
 
-        let is = inputs.iter().map(|x| x.as_slice()).collect::<Vec<_>>();
-        let os = outputs.iter().map(|x| x.as_slice()).collect::<Vec<_>>();
-        self.nn.fit_batch_size(&is, &os, batch_size);
+        let is = inputs.iter().map(|x| x).collect::<Vec<_>>();
+        let os = outputs.iter().map(|x| x).collect::<Vec<_>>();
+        self.nn.fit(&is, &os, batch_size);
     }
 }
